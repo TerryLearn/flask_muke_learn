@@ -10,4 +10,16 @@
 * 启动pipenv
 * 安装各种包 比如flask pipenv install flask
 * pipenv --venv 虚拟环境的路径
+
+
+#### 最小的视图函数
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/hello/')
+def hello():
+	return "Hello, Terry"
+
+app.run()
 ~                              
