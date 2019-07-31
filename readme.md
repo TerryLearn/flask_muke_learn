@@ -1,4 +1,4 @@
-#### 开始flask项目的步骤
+### 开始flask项目的步骤
 * 安装Python环境
 * 检验Python和pip是否安装完毕
 * 新建项目文件夹
@@ -11,6 +11,7 @@
 * 安装各种包 比如flask pipenv install flask
 * pipenv --venv 虚拟环境的路径
 
+### Flask基本原理与核心知识
 
 #### 最小的视图函数
 from flask import Flask
@@ -22,4 +23,7 @@ def hello():
 	return "Hello, Terry"
 
 app.run()
+
+#### 打开调试模式
+app.run(debug=True) #debug=True 自动重启
 ~                              

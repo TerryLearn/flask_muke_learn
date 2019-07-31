@@ -7,6 +7,6 @@ app = Flask(__name__)
 
 @app.route('/hello')
 def hello():
-    return 'Hello, Terry'
+    return 'Hello, TerrySH'
 
-app.run()
+app.run(debug=True)
