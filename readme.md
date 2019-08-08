@@ -25,5 +25,6 @@ def hello():
 app.run()
 
 #### 打开调试模式
-app.run(debug=True) #debug=True 自动重启
+app.run(debug=True) #debug=True 自动重启 host=0.0.0.0 修改host可以被外网访问
+调试模式性能较差 
 ~                              
