@@ -7,7 +7,15 @@ app.config.from_object('config')
 
 @app.route('/hello')
 def hello():
-    return 'Hello, TerrySH'
+    #status code 200 404 301
+    # content-type http headers
+    #content-type = text/html默认
+    headers = {
+        'content-type':'application/json',
+        'location':'http://www.bing.com'
+    }
+    return '<html><html>', 301, headers
+
 
 
 #入口文件中添加，表示只在入口文件中执行
